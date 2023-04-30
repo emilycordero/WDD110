@@ -1,0 +1,32 @@
+h1 {
+    color: black;
+    text-decoration: underline; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.image {
+    height: 100px;
+    width: 100px;
+    position: right;
+    border: solid;
+}
+.myimage {
+    height: 200px;
+    width: 150px;
+    position: relative;
+    border: solid;
+}
+
+body {
+    margin: 1;
+    max-width: 1024px;
+    font-size: large;
+    text-align: center;
+    background-color: beige;
+    border-style: groove;
+    text-shadow: 1px;
+}
+
+ul {
+    padding-left: 280px;
+    text-align: left;
+}
