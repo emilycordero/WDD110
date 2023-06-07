@@ -166,6 +166,8 @@ main section img {
 header {
     background-color: #D95D39;
     font-family: 'Playfair Display', 'Times New Roman', Arial;
+    opacity: 50%;
+    padding-top: 200px;
 }
 
 .home-title {
