@@ -136,7 +136,7 @@ nav a:hover {
 }
 main #home-grid {
     display: grid;
-    grid-template-columns: 1/10;
+    grid-template-columns: 10fr;
 }
 
 main section {
