@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us - Evergreen Rapids Rafting</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">	
+</head>
+<body>
+	<header>
+        <a id="logo_link" href="index.html">
+            <img src="images/Rapids_logo2.jpg" alt="logo" class="logo"></a>
+        <nav>
+            <a href="index.html" target="_blank">Home</a>
+            <a href="siteplan-rafting.html" target="_blank">Site Plan</a>
+            <a href="contactus.html" target="_blank">Contact Us</a>
+        </nav>
+	</header>
+    <div class="grid">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178636.0513173747!2d-108.73122772401335!3d38.920851325842214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876ba4a907fd4733%3A0x85a7b0cd4abeb446!2sWhitewater%20Rafting%20-%20Colorado%20Adventure%20Center!5e0!3m2!1sen!2sus!4v1687380098299!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Map to company location"></iframe>
+            <hr>
+            <div class="contact">
+                <h3>Address:</h3>
+                <p>2697 Stanley Rd, Idaho Springs, CO 80452</p>
+                <h3>Phone:</h3>
+                <p>555-555-5555</p>
+                <h3>Hours:</h3>
+                <p>Monday, 8 AM–7 PM <br>
+                   Tuesday, 8 AM–7 PM <br>
+                   Wednesday, 8 AM–7 PM<br>
+                   Thursday, 8 AM–7 PM<br>
+                   Friday, 8 AM–7 PM<br>
+                   Saturday, 8 AM–7 PM<br>
+                   Sunday, 8 AM–7 PM<br>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Evergreen Rapids Rafting</h1>
+            <p>Get in touch with us</p>
+            <div id="feedback"></div>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="8" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+</body>
+<footer class="contact-us-footer">
+    <p>Evergreen Rapids &copy; 2023 - Emily Cordero</p>
+    <p><a href="siteplan-rafting.html">Site Plan</a></p>
+    <p><a href="contactus.html">Contact Us</a></p>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+        </a>
+    </div>
+</footer>
+</html>
