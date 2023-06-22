@@ -269,9 +269,10 @@ form {
     height: 650px;
     justify-content: space-between;
     margin-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
     background-color: #F0A202;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
 }
 label {
     display: block;
@@ -297,11 +298,49 @@ input[type=submit] {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
 input[type=submit]:hover {
     background-color: #555;
 }
 .contact-us-footer {
     margin-top: 0;
+}
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
 }
 /* End of CSS for contact us html page*/
 
