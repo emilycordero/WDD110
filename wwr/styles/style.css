@@ -344,6 +344,39 @@ input[type=submit]:hover {
 }
 /* End of CSS for contact us html page*/
 
+/* Start of CSS for Rivers page*/
+h3 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    text-decoration: underline;
+}
+#about_evergreen {
+    padding-top: 20px;
+    border-radius: 20px;
+}
+.river {
+   width: 100%;
+   max-height: 300px;
+   box-shadow: 5px 5px 10px #6f7364;
+}
+.cabin {
+    width: 100%;
+    max-height: 300px;
+    box-shadow: 5px 5px 10px #6f7364;
+ }
+ .hiking_trail {
+    width: 100%;
+    max-height: 300px;
+    box-shadow: 5px 5px 10px #6f7364;
+ }
+
+h3, h5 {
+    text-align: center;
+}
+p {
+    padding-bottom: 20px;
+}
+/* Start of CSS for Rivers page*/
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
