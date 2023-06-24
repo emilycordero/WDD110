@@ -19,6 +19,7 @@
 	</header>
     <div class="grid">
         <div class="map">
+            <h3>Find Us Here:</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178636.0513173747!2d-108.73122772401335!3d38.920851325842214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876ba4a907fd4733%3A0x85a7b0cd4abeb446!2sWhitewater%20Rafting%20-%20Colorado%20Adventure%20Center!5e0!3m2!1sen!2sus!4v1687380098299!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Map to company location"></iframe>
             <hr>
             <div class="contact">
@@ -37,23 +38,27 @@
                 </p>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="form">
             <h1>Evergreen Rapids Rafting</h1>
             <p>Get in touch with us</p>
             <div id="feedback"></div>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="8" required></textarea>
-
-                <input type="submit" value="Submit">
+            <form action="/my-handling-form-page" method="post">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="8" required></textarea>
+                </div>  
+                <button type="submit" value="Submit">Submit</button>
             </form>
         </div>
+        <img src="images/Rapids_logo2.jpg" alt="logo" class="logo_contact">
     </div>
     <script>
     // get the feedback div element so we can do something with it.
