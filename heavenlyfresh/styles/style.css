@@ -25,6 +25,7 @@ nav {
     padding-left: 20%;
     background-color: #D4AC0D;
     max-width: 100%;
+    font-size: 40px;
 }
 nav a {
     text-align: center;
@@ -141,6 +142,99 @@ footer .social {
     padding-top: 15px;
 }
 
+/* Menu Subpage*/
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  .mySlides img {
+    width: 100%;
+    height: 40rem;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #452C2C;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover */
+  .prev:hover,
+  .next:hover {
+    background-color: #E80889;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #E80889;
+    font-size: 40px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    font-size: 40px;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* 8 columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  /* End of Menu Subpage*/
 @media screen and (max-width: 900px) {
     #main-img, .main-grid {
         display: block;
