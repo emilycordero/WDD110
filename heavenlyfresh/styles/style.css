@@ -235,6 +235,42 @@ footer .social {
     opacity: 1;
   }
   /* End of Menu Subpage*/
+  /*Start of Contact us Subpage*/
+  #contact {
+    padding-top: 20px;
+    font-size: larger;
+  }
+  #contact-social:hover {
+    background-color: aliceblue;
+  }
+  form {
+    font-size: larger;
+    text-align: center;
+    padding-bottom: 20px;
+    display: block;
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+}
+  form input {
+    margin: 20px;
+    padding: 20px;
+  }
+  form textarea {
+    max-width: 200px;
+    display: flex;
+    justify-content: left;
+  }
+  article h2 {
+    font-size: larger;
+    text-align: center;
+}
+  article p {
+    font-size: larger;
+    text-align: center;
+}
+
+  /*End of Contact Us Subpage*/
 @media screen and (max-width: 900px) {
     #main-img, .main-grid {
         display: block;
